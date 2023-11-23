@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture Week Event</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db; /* Bright blue header background */
+            text-align: center;
+            padding: 1em;
+            color: #fff;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: url('culture_banner.gif') center/cover; /* Background GIF for Culture Week */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Light gray shadow */
+            position: relative;
+            color: #333;
+        }
+
+        .title-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: calc(100% - 20px);
+        }
+
+        .home-link,
+        .event-link {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 18px;
+            border: 2px solid transparent;
+            padding: 5px 10px;
+            transition: background-color 0.3s, border 0.3s;
+        }
+
+        .home-link:hover,
+        .event-link:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white on hover */
+            border: 2px solid #fff;
+            border-radius: 5px;
+        }
+
+        .banner {
+            width: 100%;
+            height: 200px; /* Adjust the height based on your preference */
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        h2 {
+            color: #fff;
+            margin-top: 20px;
+        }
+        h3{
+            color: black;
+        }
+
+        p {
+            color: #fff; /* Medium gray text color */
+             font-size: 18px;
+        }
+
+        .event-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            max-width: 48%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .payment-form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        label1{
+            display: block;
+            margin-bottom: 8px;
+            color: #fff;
+            
+        }
+
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #fff; /* White input background */
+            color: #333;
+            transition: background-color 0.3s, border 0.3s;
+        }
+
+        input:focus {
+            background-color: #f0f0f0; /* Light gray on focus */
+        }
+
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #fff; /* White input background */
+            color: #333;
+            transition: background-color 0.3s, border 0.3s;
+        }
+
+        textarea:focus {
+            background-color: #f0f0f0; /* Light gray on focus */
+        }
+
+        button {
+            background-color: #e74c3c; /* Red button background */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #c0392b; /* Darker red on hover */
+        }
+
+        .questions-section {
+            margin-top: 40px;
+            background-color: #ecf0f1; /* Lighter gray background */
+            padding: 20px;
+            border-radius: 15px;
+            animation: fade-in 1s ease-in-out; /* Fade-in animation */
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .questions-form {
+            margin-top: 20px;
+            transition: transform 0.5s ease-in-out; /* Slide-up transition */
+            transform: translateY(0);
+        }
+
+        .questions-section:hover .questions-form {
+            transform: translateY(-10px);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> MR AND MISS USIU</h1>
+    </header>
+
+    <section>
+        <div class="title-bar">
+            <a href="index.html" class="home-link">Home</a>
+            <a href="event.html" class="event-link">Event</a>
+        </div>
+
+        <h2>About the Event</h2>
+        <p>
+            Join us for an immersive experience celebrating diverse African cultures.
+            Explore futuristic traditions, music, dance, and exquisite cuisine from different regions.
+            Don't miss this extraordinary cultural event!
+        </p>
+
+        <div class="gallery">
+            <img src="https://i.pinimg.com/236x/51/18/2f/51182f3a8fc0eca854840ded9cbf9942.jpg">
+            
+        </div>
+
+        <div class="payment-form">
+            
+            <form action="#" method="post">
+                <label1 for="cardNumber">Card Number:</label1>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+
+                <label1 for="expirationDate">Expiration Date:</label1>
+                <input type="text" id="expirationDate" name="expirationDate" required>
+
+                <label1 for="cvv">CVV:</label1>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <button type="submit">Make Payment</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="questions-section">
+        <h3>Have Questions? Ask Us!</h3>
+        <form action="#" method="post" class="questions-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+
+            <button type="submit">Submit Question</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body {
+  background-image: url("https://spaces.w3schools.com/images/4_M8uIfPEZw.jpg");
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    
+     
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;  
+}
+
+nav ul li a:hover {
+      color: #00bcd4;
+    }
+
+nav ul li a::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 0;
+      background: #00bcd4;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s;
+    }
+nav ul li a:hover::after,
+    nav a.active::after {
+      width: 100%;
+    }
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: white;
+    font-size: 100px;  
+}
+p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 15px;
+    width: auto;
+    display: inline;
+    text-align: center;
+}
+button{
+    width:180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-flex;
+    border-radius: 20px;
+    padding: 50px 80px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 15px;
+    
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+         
+}
+.card1{
+     background-image: url("https://i.pinimg.com/236x/63/74/35/63743541c709ece010ef55b8305e6525.jpg");
+}
+.card2{
+     background-image: url("https://i.pinimg.com/564x/e9/d0/c8/e9d0c815cb556a68240ac5594f07ef7b.jpg");
+}
+.card3{
+     background-image: url("https://i.pinimg.com/564x/ee/a2/ce/eea2cedcbd1f9f01588c45b02c6f1270.jpg ");
+}
+.card4{
+     background-image: url("https://i.pinimg.com/564x/2a/11/2f/2a112f695462f797da807fa7a03b6f39.jpg ");
+}
+.card:hover{ 
+    transform: translateY(-10px)
+}
+h5{
+    color: white;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 5px #000;
+    font-size:8px; 
+}

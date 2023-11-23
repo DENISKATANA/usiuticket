@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Employees</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #101010; /* Dark background */
+            color: #fff;
+        }
+
+        header {
+            background-color: #000; /* Black header background */
+            text-align: center;
+            padding: 1em;
+        }
+
+        section.employee_directory {
+            width: 80%;
+            display: center;
+            margin: 0 auto;
+            position: relative;
+            margin-top: 70px;
+            margin-bottom: 30px;
+            
+        }
+
+        section.employee_directory h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #00808f;
+            margin-bottom: 10px;
+        }
+
+        form.search_form {
+            position: relative;
+            margin-bottom: 20px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        form.search_form input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: solid 2px #c6c6c6;
+            border-radius: 5px;
+            margin: 0 auto;
+            transition: .2s ease-in;
+        }
+
+        form.search_form input:focus {
+            border-color: #00808f;
+            outline: none;
+        }
+
+        form.search_form i {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: black;
+        }
+
+        section.employee_listing {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        div.employee {
+            padding: 40px;
+            background-color: #00808f;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, .1);
+            margin-bottom: 20px;
+            text-align: center;
+            width: calc(33.33% - 20px);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+        }
+        
+
+        div.employee img {
+            width: 100%;
+            height: auto;
+            border-radius: 60%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        div.employee:hover img {
+            transform: scale(1.1);
+        }
+
+        div.employee h2 {
+            font-size: 20px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        div.employee p.position,
+        div.employee p.job_type {
+            font-weight: 700;
+            margin: 5px 0;
+        }
+
+        div.employee:hover,
+        div.employee:hover h2 {
+            color: #fff;
+            background-color: #bc658d;
+            transition: .2s ease-in;
+        }
+
+        div.employee:hover .job_type {
+            background-color: #bc658d;
+            border: 1px solid #fff;
+            display: block;
+    /* Additional styling for the text area */
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adjust the positioning as needed */
+    top: 100%;
+    left: 0;
+        }
+
+        @media (min-width: 768px) {
+            .employee_directory {
+                width: 80%;
+            }
+
+            form.search_form {
+                max-width: 600px;
+            }
+
+            .nav-bar {
+                text-align: center;
+                background-color: #1a1a1a; /* Darker gray background for the navigation bar */
+                padding: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+                margin-bottom: 20px;
+            }
+
+            .nav-bar a {
+                text-decoration: none;
+                color: #fff;
+                margin: 0 15px;
+                font-weight: 700;
+                font-size: 18px;
+                transition: color 0.3s;
+            }
+
+            .nav-bar a:hover {
+                color: #00808f; /* Highlight color on hover */
+            }
+
+            div.employee {
+                width: calc(25% - 20px);
+            }
+        }
+       
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="event.html">Events</a>
+    </div>
+    <header>
+        <h1>Our Employees</h1>
+    </header>
+
+    <section class="employee_directory">
+        <h1>Developers</h1>
+        <form action="submit" class="search_form">
+        </form>
+ 
+            </div>
+        <div class="employee_listing">
+            <div class="employee">
+                <img src="https://i.pinimg.com/236x/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.jpg" alt="Oprah Winfrey">
+                <h2 class="employee_name">DENIS</h2>
+                <p class="position">Full Time Student</p><br>
+                <p class="job_type">Developer</p>
+                
+            </div>
+
+            <div class="employee">
+              <img src="https://i.pinimg.com/236x/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.jpg" alt="Oprah Winfrey">
+                <h2 class="employee_name">ALEX</h2>
+                <p class="position">Full Time Student</p><br>
+                <p class="job_type">Developer</p>
+            </div>
+
+            <div class="employee">
+                <img src="https://i.pinimg.com/236x/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.jpg" alt="Oprah Winfrey">
+                <h2 class="employee_name">ELKANAH</h2>
+                <p class="position">Full Time Student</p><br>
+                <p class="job_type">Developer</p>
+            </div>
+
+            <div class="employee">
+                <img src="https://i.pinimg.com/236x/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.jpg" alt="Oprah Winfrey">
+                <h2 class="employee_name">LUAL</h2>
+                <p class="position">Full Time Student</p><br>
+                <p class="job_type">Developer</p>
+            </div>
+
+            <div class="employee">
+                <img src="https://i.pinimg.com/236x/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.jpg" alt="Oprah Winfrey">
+                <h2 class="employee_name">RYAN</h2>
+                <p class="position">Full Time Student</p><br>
+                <p class="job_type">Developer</p>
+            </div>
+
+            
+        </div>
+    </section>
+</body>
+
+</html>
